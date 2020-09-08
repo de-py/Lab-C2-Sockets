@@ -8,7 +8,7 @@ class http_server(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(b'<html>Dalton Ellis<br>Dakota State University</html>')
+        self.wfile.write(b'<html>Dalton Ellis<br></html>')
 
 # Serving HTTP with HTTP Server module
 def http_requests(http_port):
